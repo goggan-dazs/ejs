@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') -%>
+</head>
+<body>
+   <ul>
+    <% db.forEach(movie=>{ %>
+        <li>
+            <a href="/shows/"><%= movie.Title %></a>
+        </li>
+ <% }) %>
+
+   </ul> 
+</body>
+</html>
